@@ -1,12 +1,5 @@
-// TODO: write code here
+import GoblinGame from './GoblinGame';
 
-// comment this to pass build
-// eslint-disable-next-line no-unused-vars
-const unusedVariable = 'variable';
-
-// for demonstration purpose only
-export default function demo(value) {
-  return value;
-}
-
-console.log('app.js included');
+const goblinGame = new GoblinGame(document.querySelector('body'));
+goblinGame.drawTable();
+goblinGame.startGame();
